@@ -60,24 +60,8 @@
 
 ### Quick Install
 
+
 ```bash
-<<<<<<< HEAD
 git clone https://github.com/r0zx/mwavs
-pip install -e .
-
-=======
-# Clone the repository
-git clone https://github.com/r0zx/mwavs.git
 cd mwavs
-
-# Create virtual environment
-python3 -m venv venv
-source venv/bin/activate  # Linux/macOS
-# venv\Scripts\activate   # Windows
-
-# Install MWAVS
-pip install -e .
-
-# Verify installation
-mwavs --version
->>>>>>> e25a1df (Add documentation, scripts, tests, and base config files)
+pip install -r requirements.txt
