@@ -1,71 +1,151 @@
+Markdown
+
 <div align="center">
 
-# 🔍 MWAVS
+# 🎵 MWAVS
 
-### Modular Web Application Vulnerability Scanner
+### Modern Web Audio Visualization System
 
-[![Build Status](https://github.com/r0zx/mwavs/actions/workflows/python-ci.yml/badge.svg)](https://github.com/r0zx/mwavs/actions)
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macos%20%7C%20windows-lightgrey.svg?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg?style=for-the-badge)](https://github.com/r0zx/mwavs/releases)
+[![Stars](https://img.shields.io/github/stars/r0zx/mwavs?style=for-the-badge&color=yellow)](https://github.com/r0zx/mwavs/stargazers)
+[![Forks](https://img.shields.io/github/forks/r0zx/mwavs?style=for-the-badge)](https://github.com/r0zx/mwavs/network/members)
+[![Issues](https://img.shields.io/github/issues/r0zx/mwavs?style=for-the-badge)](https://github.com/r0zx/mwavs/issues)
 
-[![GitHub stars](https://img.shields.io/github/stars/r0zx/mwavs?style=for-the-badge)](https://github.com/r0zx/mwavs/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/r0zx/mwavs?style=for-the-badge)](https://github.com/r0zx/mwavs/network)
-[![GitHub issues](https://img.shields.io/github/issues/r0zx/mwavs?style=for-the-badge)](https://github.com/r0zx/mwavs/issues)
+**A powerful, lightweight, and customizable audio visualization library for the modern web.**
 
-**A heigh-level, plugin-driven web application security scanner built for penetration testers, bug bounty hunters, and security professionals.**
+[🚀 Demo](#demo) • [📖 Documentation](#documentation) • [💡 Examples](#examples) • [🤝 Contributing](#contributing)
 
-[Features](#-features) • [Installation](#-installation) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Contributing](#-contributing)
+---
 
 </div>
 
----
-
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| 🔌 **Plugin Architecture** | Modular design with auto-discovery and hot-reload |
-| 🎭 **XSS Detection** | Reflected, DOM-based hints, context-aware payloads |
-| 💉 **SQL Injection** | Error-based, Boolean-blind, Time-based detection |
-| 📁 **Directory Enumeration** | Wordlist-based with extension fuzzing |
-| 🔗 **SSRF Detection** | Localhost, cloud metadata, internal network probing |
-| 🌐 **CORS Misconfiguration** | Wildcard, reflected origin, null origin detection |
-| ↗️ **Open Redirect** | URL parameter, JavaScript, meta refresh detection |
-| 🖥️ **Interactive Mode** | Manual testing with request/response inspection |
-| 📊 **Professional Reports** | JSON, HTML, TXT formats with evidence |
-| 🛡️ **WAF Detection** | Cloudflare, Akamai, AWS WAF identification |
-| 🔧 **Proxy Support** | Burp Suite and other proxy integration |
+<table>
+<tr>
+<td width="50%">
+
+### 🎨 **Beautiful Visualizations**
+- Waveform displays
+- Frequency spectrum analyzers
+- Circular visualizers
+- Custom shader support
+
+</td>
+<td width="50%">
+
+### ⚡ **High Performance**
+- WebGL accelerated rendering
+- 60 FPS animations
+- Minimal CPU usage
+- Optimized for mobile
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔧 **Highly Customizable**
+- Extensive configuration options
+- Theme support
+- Plugin architecture
+- CSS styling support
+
+</td>
+<td width="50%">
+
+### 📦 **Easy Integration**
+- Zero dependencies
+- TypeScript support
+- Framework agnostic
+- CDN available
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🎯 Vulnerability Coverage
+## 🚀 Quick Start
 
-| Vulnerability | Methods | Severity | Status |
-|:--------------|:--------|:---------|:-------|
-| Cross-Site Scripting (XSS) | Reflected, DOM-based, Context-aware | 🟠 High | ✅ Stable |
-| SQL Injection | Error, Boolean, Time-based | 🔴 Critical | ✅ Stable |
-| Directory Enumeration | Wordlist, Extensions | 🔵 Info-Medium | ✅ Stable |
-| Server-Side Request Forgery | Localhost, Cloud, Internal | 🔴 Critical | ✅ Stable |
-| CORS Misconfiguration | Wildcard, Reflected, Null | 🟡 Medium | ✅ Stable |
-| Open Redirect | URL, JavaScript, Meta | 🟡 Medium | ✅ Stable |
-
----
-
-## 📦 Installation
-
-### Requirements
-
-- Python 3.8 or higher
-- pip package manager
-
-### Setup
+### Installation
 
 ```bash
+# Using npm
+npm install mwavs
+
+# Using yarn
+yarn add mwavs
+
+# Using pnpm
+pnpm add mwavs
+
+Basic Usage
+
+JavaScript
+
+import { MWAVS } from 'mwavs';
+
+// Initialize the visualizer
+const visualizer = new MWAVS({
+  container: '#audio-container',
+  audioSource: 'path/to/audio.mp3',
+  type: 'waveform'
+});
+
+// Start visualization
+visualizer.play();
+
+📖 Documentation
+Configuration Options
+Option	Type	Default	Description
+container	string	required	Target container for visualization
+audioSource	string	required	Audio file URL or media stream
+type	string	'waveform'	Visualization type
+theme	string	'default'	Color theme
+💡 Examples
+Waveform Visualization
+
+JavaScript
+
+const visualizer = new MWAVS({
+  container: '#viz',
+  audioSource: 'audio.mp3',
+  type: 'waveform'
+});
+
+Frequency Bars
+
+JavaScript
+
+const visualizer = new MWAVS({
+  container: '#viz',
+  audioSource: 'audio.mp3',
+  type: 'bars'
+});
+
+🤝 Contributing
+
+Contributions are welcome! Please read our Contributing Guide before submitting a Pull Request.
+
+Bash
+
 # Clone the repository
-git clone https://github.com/r0zx/mwavs
-cd mwavs
+git clone https://github.com/r0zx/mwavs.git
 
 # Install dependencies
-pip install -r requirements.txt
+npm install
 
+# Start development server
+npm run dev
+
+📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+<div align="center">
+
+If you find this project useful, please consider giving it a ⭐️
+
+Made with ❤️ by r0zx
+</div> ```
