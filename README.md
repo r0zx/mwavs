@@ -3,19 +3,19 @@
 # 🔍 MWAVS
 
 ### Modular Web Application Vulnerability Scanner
-![Build Status](https://github.com/r0zx/mwavs/actions/workflows/python-ci.yml/badge.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+
+[![Build Status](https://github.com/r0zx/mwavs/actions/workflows/python-ci.yml/badge.svg)](https://github.com/r0zx/mwavs/actions)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macos%20%7C%20windows-lightgrey.svg?style=for-the-badge)]()
+
 [![GitHub stars](https://img.shields.io/github/stars/r0zx/mwavs?style=for-the-badge)](https://github.com/r0zx/mwavs/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/r0zx/mwavs?style=for-the-badge)](https://github.com/r0zx/mwavs/network)
 [![GitHub issues](https://img.shields.io/github/issues/r0zx/mwavs?style=for-the-badge)](https://github.com/r0zx/mwavs/issues)
 
 **A production-grade, plugin-driven web application security scanner built for penetration testers, bug bounty hunters, and security professionals.**
 
-[Features](#-features) • [Installation](#-installation) • [Quick Start](#quickstart) • [Documentation](#-documentation) • [Contributing](#-contributing)
+[Features](#-features) • [Installation](#-installation) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Contributing](#-contributing)
 
 </div>
 
@@ -42,7 +42,7 @@
 ## 🎯 Vulnerability Coverage
 
 | Vulnerability | Methods | Severity | Status |
-|:-------------|:--------|:---------|:-------|
+|:--------------|:--------|:---------|:-------|
 | Cross-Site Scripting (XSS) | Reflected, DOM-based, Context-aware | 🟠 High | ✅ Stable |
 | SQL Injection | Error, Boolean, Time-based | 🔴 Critical | ✅ Stable |
 | Directory Enumeration | Wordlist, Extensions | 🔵 Info-Medium | ✅ Stable |
@@ -55,17 +55,16 @@
 ## 📦 Installation
 
 ### Requirements
+
 - Python 3.8 or higher
 - pip package manager
 
- ## Quickstart
-
-### Automatic Scan
-```bash
-python3 mwavs.py --auto -u http://target.com
-
+### Setup
 
 ```bash
+# Clone the repository
 git clone https://github.com/r0zx/mwavs
 cd mwavs
+
+# Install dependencies
 pip install -r requirements.txt
