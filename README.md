@@ -13,7 +13,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/r0zx/mwavs?style=for-the-badge)](https://github.com/r0zx/mwavs/network)
 [![GitHub issues](https://img.shields.io/github/issues/r0zx/mwavs?style=for-the-badge)](https://github.com/r0zx/mwavs/issues)
 
-**A production-grade, plugin-driven web application security scanner built for penetration testers, bug bounty hunters, and security professionals.**
+**A heigh-level, plugin-driven web application security scanner built for penetration testers, bug bounty hunters, and security professionals.**
 
 [Features](#-features) • [Installation](#-installation) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Contributing](#-contributing)
 
@@ -68,3 +68,4 @@ cd mwavs
 
 # Install dependencies
 pip install -r requirements.txt
+
