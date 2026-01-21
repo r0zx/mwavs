@@ -11,8 +11,8 @@ from typing import Dict, List, Type, Optional, Any
 import threading
 
 from .base import BasePlugin, PluginResult, PluginContext
-from scanner.core.logger import get_logger
-from scanner.core.exceptions import PluginLoadException, PluginException
+from mwavs.core.logger import get_logger
+from mwavs.core.exceptions import PluginLoadException, PluginException
 
 logger = get_logger("plugins")
 
@@ -63,7 +63,7 @@ class PluginRegistry:
             
             try:
                 # Import the module
-                module = importlib.import_module(f".{module_name}", package="scanner.plugins")
+                module = importlib.import_module(f".{module_name}", package="mwavs.plugins")
                 
                 # Find plugin classes in the module
                 for name, obj in inspect.getmembers(module, inspect.isclass):

@@ -8,12 +8,12 @@ import json
 from typing import Optional, Dict, List, Any
 from urllib.parse import urlparse, urlencode, parse_qs
 
-from scanner.core.engine import HTTPEngine
-from scanner.core.config import ScannerConfig
-from scanner.core.request_wrapper import RequestWrapper, HTTPMethod, RequestBuilder
-from scanner.core.response_wrapper import ResponseWrapper
-from scanner.core.logger import get_logger
-from scanner.core.utils import PayloadEncoder
+from mwavs.core.engine import HTTPEngine
+from mwavs.core.config import ScannerConfig
+from mwavs.core.request_wrapper import RequestWrapper, HTTPMethod, RequestBuilder
+from mwavs.core.response_wrapper import ResponseWrapper
+from mwavs.core.logger import get_logger
+from mwavs.core.utils import PayloadEncoder
 
 logger = get_logger("interactive")
 

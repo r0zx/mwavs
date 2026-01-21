@@ -9,11 +9,11 @@ from typing import List, Optional, Dict, Any, Tuple
 from dataclasses import dataclass
 
 from .base import ActivePlugin, PluginContext, PluginResult, PluginCategory
-from scanner.core.engine import HTTPEngine
-from scanner.core.request_wrapper import RequestWrapper, HTTPMethod, RequestBuilder
-from scanner.core.response_wrapper import ResponseWrapper, ResponseDiff
-from scanner.core.utils import Finding, PayloadEncoder, ResponseAnalyzer, RandomUtils
-from scanner.core.exceptions import RequestException
+from mwavs.core.engine import HTTPEngine
+from mwavs.core.request_wrapper import RequestWrapper, HTTPMethod, RequestBuilder
+from mwavs.core.response_wrapper import ResponseWrapper, ResponseDiff
+from mwavs.core.utils import Finding, PayloadEncoder, ResponseAnalyzer, RandomUtils
+from mwavs.core.exceptions import RequestException
 
 
 @dataclass

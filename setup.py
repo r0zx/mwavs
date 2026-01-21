@@ -21,8 +21,8 @@ if requirements_path.exists():
 setup(
     name="mwavs",
     version="1.0.0",
-    author="Security Team",
-    author_email="security@example.com",
+    author="r0zx",
+    author_email="dhimanyatin4@gmail.com",
     description="Modular Web Application Vulnerability Scanner",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -30,7 +30,7 @@ setup(
     packages=find_packages(exclude=["tests", "tests.*"]),
     include_package_data=True,
     package_data={
-        "scanner": [
+        "mwavs": [
             "data/payloads/*.txt",
             "data/wordlists/*.txt",
         ],

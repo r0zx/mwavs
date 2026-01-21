@@ -9,12 +9,12 @@ from typing import Optional, Dict, List, Any, Generator
 from enum import Enum
 from datetime import datetime
 
-from scanner.core.engine import HTTPEngine
-from scanner.core.config import ScannerConfig, Severity
-from scanner.core.request_wrapper import RequestWrapper
-from scanner.core.response_wrapper import ResponseWrapper
-from scanner.core.utils import Finding, PayloadManager, WordlistManager
-from scanner.core.logger import get_logger
+from mwavs.core.engine import HTTPEngine
+from mwavs.core.config import ScannerConfig, Severity
+from mwavs.core.request_wrapper import RequestWrapper
+from mwavs.core.response_wrapper import ResponseWrapper
+from mwavs.core.utils import Finding, PayloadManager, WordlistManager
+from mwavs.core.logger import get_logger
 
 
 class PluginCategory(Enum):

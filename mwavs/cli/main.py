@@ -8,15 +8,15 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Optional, Dict, Any
 
-from scanner import __version__
-from scanner.core.config import ScannerConfig, ScanMode, OutputFormat, ProxyConfig
-from scanner.core.engine import HTTPEngine
-from scanner.core.logger import setup_logging, get_logger
-from scanner.core.utils import URLUtils
-from scanner.core.exceptions import ScannerException, ValidationException
-from scanner.plugins import discover_plugins, get_plugin, list_plugins
-from scanner.plugins.base import PluginContext, PluginResult
-from scanner.reports import JSONReporter, HTMLReporter, TxtReporter
+from mwavs import __version__
+from mwavs.core.config import ScannerConfig, ScanMode, OutputFormat, ProxyConfig
+from mwavs.core.engine import HTTPEngine
+from mwavs.core.logger import setup_logging, get_logger
+from mwavs.core.utils import URLUtils
+from mwavs.core.exceptions import ScannerException, ValidationException
+from mwavs.plugins import discover_plugins, get_plugin, list_plugins
+from mwavs.plugins.base import PluginContext, PluginResult
+from mwavs.reports import JSONReporter, HTMLReporter, TxtReporter
 from .arguments import parse_arguments
 from .interactive import InteractiveMode
 

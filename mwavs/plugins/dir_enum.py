@@ -10,11 +10,11 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 
 from .base import BasePlugin, PluginContext, PluginResult, PluginCategory
-from scanner.core.engine import HTTPEngine
-from scanner.core.request_wrapper import RequestWrapper, HTTPMethod, RequestBuilder
-from scanner.core.response_wrapper import ResponseWrapper
-from scanner.core.utils import Finding, URLUtils, ResponseAnalyzer
-from scanner.core.exceptions import RequestException, WAFBlockException, RateLimitException
+from mwavs.core.engine import HTTPEngine
+from mwavs.core.request_wrapper import RequestWrapper, HTTPMethod, RequestBuilder
+from mwavs.core.response_wrapper import ResponseWrapper
+from mwavs.core.utils import Finding, URLUtils, ResponseAnalyzer
+from mwavs.core.exceptions import RequestException, WAFBlockException, RateLimitException
 
 
 @dataclass

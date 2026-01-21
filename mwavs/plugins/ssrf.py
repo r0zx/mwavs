@@ -10,11 +10,11 @@ from typing import List, Optional, Dict, Any, Tuple
 from urllib.parse import urlparse, quote
 
 from .base import ActivePlugin, PluginContext, PluginResult, PluginCategory
-from scanner.core.engine import HTTPEngine
-from scanner.core.request_wrapper import RequestWrapper, HTTPMethod, RequestBuilder
-from scanner.core.response_wrapper import ResponseWrapper
-from scanner.core.utils import Finding, PayloadEncoder, RandomUtils
-from scanner.core.exceptions import RequestException
+from mwavs.core.engine import HTTPEngine
+from mwavs.core.request_wrapper import RequestWrapper, HTTPMethod, RequestBuilder
+from mwavs.core.response_wrapper import ResponseWrapper
+from mwavs.core.utils import Finding, PayloadEncoder, RandomUtils
+from mwavs.core.exceptions import RequestException
 
 
 class SSRFPlugin(ActivePlugin):
