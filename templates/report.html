@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>MWAVS Report</title>
+</head>
+<body>
+<h1>MWAVS Scan Report</h1>
+<p>{{ summary }}</p>
+{% for item in results %}
+<h2>{{ item.type }} - {{ item.severity }}</h2>
+<p>URL: {{ item.url }}</p>
+<p>Payload: {{ item.payload }}</p>
+<p>Evidence: {{ item.evidence }}</p>
+<hr>
+{% endfor %}
+</body>
+</html>
+
