@@ -1,0 +1,442 @@
+{
+  "report_metadata": {
+    "generator": "MWAVS - Modular Web Application Vulnerability Scanner",
+    "version": "1.0.0",
+    "generated_at": "2026-01-21T16:09:53.422545Z",
+    "format_version": "1.0"
+  },
+  "scan_info": {
+    "target": "http://testphp.vulnweb.com/",
+    "scan_time": "2026-01-21T16:09:53.422487",
+    "duration": 142.98529267311096,
+    "plugins_run": [
+      "xss",
+      "sqli",
+      "dir",
+      "cors",
+      "ssrf",
+      "openredirect"
+    ],
+    "total_findings": 10,
+    "total_errors": 0
+  },
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 2,
+    "info": 8
+  },
+  "findings": [
+    {
+      "plugin_name": "dir",
+      "vulnerability_type": "Directory/File Found",
+      "severity": "info",
+      "confidence": 90.0,
+      "url": "http://testphp.vulnweb.com/images/",
+      "parameter": null,
+      "payload": null,
+      "evidence": "Path: /images/\nStatus Code: 200\nContent Length: 377\nContent Type: text/html\nRedirect: N/A\nReason: Found (HTTP 200)",
+      "request_data": null,
+      "response_data": null,
+      "description": "The path '/images/' was discovered on the server. Found (HTTP 200)",
+      "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    },
+    {
+      "plugin_name": "dir",
+      "vulnerability_type": "Directory/File Found",
+      "severity": "info",
+      "confidence": 90.0,
+      "url": "http://testphp.vulnweb.com/vendor/",
+      "parameter": null,
+      "payload": null,
+      "evidence": "Path: /vendor/\nStatus Code: 200\nContent Length: 268\nContent Type: text/html\nRedirect: N/A\nReason: Found (HTTP 200)",
+      "request_data": null,
+      "response_data": null,
+      "description": "The path '/vendor/' was discovered on the server. Found (HTTP 200)",
+      "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    },
+    {
+      "plugin_name": "dir",
+      "vulnerability_type": "Directory/File Found",
+      "severity": "info",
+      "confidence": 90.0,
+      "url": "http://testphp.vulnweb.com/signup.php",
+      "parameter": null,
+      "payload": null,
+      "evidence": "Path: /signup.php\nStatus Code: 200\nContent Length: 6033\nContent Type: text/html; charset=UTF-8\nRedirect: N/A\nReason: Found (HTTP 200)",
+      "request_data": null,
+      "response_data": null,
+      "description": "The path '/signup.php' was discovered on the server. Found (HTTP 200)",
+      "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    },
+    {
+      "plugin_name": "dir",
+      "vulnerability_type": "Directory/File Found",
+      "severity": "info",
+      "confidence": 90.0,
+      "url": "http://testphp.vulnweb.com/login.php",
+      "parameter": null,
+      "payload": null,
+      "evidence": "Path: /login.php\nStatus Code: 200\nContent Length: 5523\nContent Type: text/html; charset=UTF-8\nRedirect: N/A\nReason: Sensitive path found (HTTP 200)",
+      "request_data": null,
+      "response_data": null,
+      "description": "The path '/login.php' was discovered on the server. Sensitive path found (HTTP 200)",
+      "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    },
+    {
+      "plugin_name": "dir",
+      "vulnerability_type": "Directory/File Found",
+      "severity": "low",
+      "confidence": 90.0,
+      "url": "http://testphp.vulnweb.com/admin",
+      "parameter": null,
+      "payload": null,
+      "evidence": "Path: /admin\nStatus Code: 200\nContent Length: 262\nContent Type: text/html\nRedirect: N/A\nReason: Sensitive path found (HTTP 200)",
+      "request_data": null,
+      "response_data": null,
+      "description": "The path '/admin' was discovered on the server. Sensitive path found (HTTP 200)",
+      "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    },
+    {
+      "plugin_name": "dir",
+      "vulnerability_type": "Directory/File Found",
+      "severity": "info",
+      "confidence": 90.0,
+      "url": "http://testphp.vulnweb.com/images",
+      "parameter": null,
+      "payload": null,
+      "evidence": "Path: /images\nStatus Code: 200\nContent Length: 377\nContent Type: text/html\nRedirect: N/A\nReason: Found (HTTP 200)",
+      "request_data": null,
+      "response_data": null,
+      "description": "The path '/images' was discovered on the server. Found (HTTP 200)",
+      "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    },
+    {
+      "plugin_name": "dir",
+      "vulnerability_type": "Directory/File Found",
+      "severity": "low",
+      "confidence": 90.0,
+      "url": "http://testphp.vulnweb.com/admin/",
+      "parameter": null,
+      "payload": null,
+      "evidence": "Path: /admin/\nStatus Code: 200\nContent Length: 262\nContent Type: text/html\nRedirect: N/A\nReason: Sensitive path found (HTTP 200)",
+      "request_data": null,
+      "response_data": null,
+      "description": "The path '/admin/' was discovered on the server. Sensitive path found (HTTP 200)",
+      "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    },
+    {
+      "plugin_name": "dir",
+      "vulnerability_type": "Directory/File Found",
+      "severity": "info",
+      "confidence": 90.0,
+      "url": "http://testphp.vulnweb.com/crossdomain.xml",
+      "parameter": null,
+      "payload": null,
+      "evidence": "Path: /crossdomain.xml\nStatus Code: 200\nContent Length: 224\nContent Type: text/xml\nRedirect: N/A\nReason: Sensitive path found (HTTP 200)",
+      "request_data": null,
+      "response_data": null,
+      "description": "The path '/crossdomain.xml' was discovered on the server. Sensitive path found (HTTP 200)",
+      "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    },
+    {
+      "plugin_name": "dir",
+      "vulnerability_type": "Directory/File Found",
+      "severity": "info",
+      "confidence": 90.0,
+      "url": "http://testphp.vulnweb.com/clientaccesspolicy.xml",
+      "parameter": null,
+      "payload": null,
+      "evidence": "Path: /clientaccesspolicy.xml\nStatus Code: 200\nContent Length: 307\nContent Type: text/xml\nRedirect: N/A\nReason: Found (HTTP 200)",
+      "request_data": null,
+      "response_data": null,
+      "description": "The path '/clientaccesspolicy.xml' was discovered on the server. Found (HTTP 200)",
+      "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    },
+    {
+      "plugin_name": "dir",
+      "vulnerability_type": "Directory/File Found",
+      "severity": "info",
+      "confidence": 90.0,
+      "url": "http://testphp.vulnweb.com/vendor",
+      "parameter": null,
+      "payload": null,
+      "evidence": "Path: /vendor\nStatus Code: 200\nContent Length: 268\nContent Type: text/html\nRedirect: N/A\nReason: Found (HTTP 200)",
+      "request_data": null,
+      "response_data": null,
+      "description": "The path '/vendor' was discovered on the server. Found (HTTP 200)",
+      "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+      "references": [
+        "https://owasp.org/www-project-web-security-testing-guide/"
+      ]
+    }
+  ],
+  "errors": [],
+  "plugin_results": {
+    "xss": {
+      "plugin_name": "xss",
+      "findings": [],
+      "findings_count": 0,
+      "errors": [],
+      "execution_time": 0.000804,
+      "requests_made": 0,
+      "completed": true,
+      "aborted": false,
+      "abort_reason": null
+    },
+    "sqli": {
+      "plugin_name": "sqli",
+      "findings": [],
+      "findings_count": 0,
+      "errors": [],
+      "execution_time": 3e-06,
+      "requests_made": 0,
+      "completed": true,
+      "aborted": false,
+      "abort_reason": null
+    },
+    "dir": {
+      "plugin_name": "dir",
+      "findings": [
+        {
+          "plugin_name": "dir",
+          "vulnerability_type": "Directory/File Found",
+          "severity": "info",
+          "confidence": 90.0,
+          "url": "http://testphp.vulnweb.com/images/",
+          "parameter": null,
+          "payload": null,
+          "evidence": "Path: /images/\nStatus Code: 200\nContent Length: 377\nContent Type: text/html\nRedirect: N/A\nReason: Found (HTTP 200)",
+          "request_data": null,
+          "response_data": null,
+          "description": "The path '/images/' was discovered on the server. Found (HTTP 200)",
+          "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+          "references": [
+            "https://owasp.org/www-project-web-security-testing-guide/"
+          ]
+        },
+        {
+          "plugin_name": "dir",
+          "vulnerability_type": "Directory/File Found",
+          "severity": "info",
+          "confidence": 90.0,
+          "url": "http://testphp.vulnweb.com/vendor/",
+          "parameter": null,
+          "payload": null,
+          "evidence": "Path: /vendor/\nStatus Code: 200\nContent Length: 268\nContent Type: text/html\nRedirect: N/A\nReason: Found (HTTP 200)",
+          "request_data": null,
+          "response_data": null,
+          "description": "The path '/vendor/' was discovered on the server. Found (HTTP 200)",
+          "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+          "references": [
+            "https://owasp.org/www-project-web-security-testing-guide/"
+          ]
+        },
+        {
+          "plugin_name": "dir",
+          "vulnerability_type": "Directory/File Found",
+          "severity": "info",
+          "confidence": 90.0,
+          "url": "http://testphp.vulnweb.com/signup.php",
+          "parameter": null,
+          "payload": null,
+          "evidence": "Path: /signup.php\nStatus Code: 200\nContent Length: 6033\nContent Type: text/html; charset=UTF-8\nRedirect: N/A\nReason: Found (HTTP 200)",
+          "request_data": null,
+          "response_data": null,
+          "description": "The path '/signup.php' was discovered on the server. Found (HTTP 200)",
+          "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+          "references": [
+            "https://owasp.org/www-project-web-security-testing-guide/"
+          ]
+        },
+        {
+          "plugin_name": "dir",
+          "vulnerability_type": "Directory/File Found",
+          "severity": "info",
+          "confidence": 90.0,
+          "url": "http://testphp.vulnweb.com/login.php",
+          "parameter": null,
+          "payload": null,
+          "evidence": "Path: /login.php\nStatus Code: 200\nContent Length: 5523\nContent Type: text/html; charset=UTF-8\nRedirect: N/A\nReason: Sensitive path found (HTTP 200)",
+          "request_data": null,
+          "response_data": null,
+          "description": "The path '/login.php' was discovered on the server. Sensitive path found (HTTP 200)",
+          "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+          "references": [
+            "https://owasp.org/www-project-web-security-testing-guide/"
+          ]
+        },
+        {
+          "plugin_name": "dir",
+          "vulnerability_type": "Directory/File Found",
+          "severity": "low",
+          "confidence": 90.0,
+          "url": "http://testphp.vulnweb.com/admin",
+          "parameter": null,
+          "payload": null,
+          "evidence": "Path: /admin\nStatus Code: 200\nContent Length: 262\nContent Type: text/html\nRedirect: N/A\nReason: Sensitive path found (HTTP 200)",
+          "request_data": null,
+          "response_data": null,
+          "description": "The path '/admin' was discovered on the server. Sensitive path found (HTTP 200)",
+          "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+          "references": [
+            "https://owasp.org/www-project-web-security-testing-guide/"
+          ]
+        },
+        {
+          "plugin_name": "dir",
+          "vulnerability_type": "Directory/File Found",
+          "severity": "info",
+          "confidence": 90.0,
+          "url": "http://testphp.vulnweb.com/images",
+          "parameter": null,
+          "payload": null,
+          "evidence": "Path: /images\nStatus Code: 200\nContent Length: 377\nContent Type: text/html\nRedirect: N/A\nReason: Found (HTTP 200)",
+          "request_data": null,
+          "response_data": null,
+          "description": "The path '/images' was discovered on the server. Found (HTTP 200)",
+          "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+          "references": [
+            "https://owasp.org/www-project-web-security-testing-guide/"
+          ]
+        },
+        {
+          "plugin_name": "dir",
+          "vulnerability_type": "Directory/File Found",
+          "severity": "low",
+          "confidence": 90.0,
+          "url": "http://testphp.vulnweb.com/admin/",
+          "parameter": null,
+          "payload": null,
+          "evidence": "Path: /admin/\nStatus Code: 200\nContent Length: 262\nContent Type: text/html\nRedirect: N/A\nReason: Sensitive path found (HTTP 200)",
+          "request_data": null,
+          "response_data": null,
+          "description": "The path '/admin/' was discovered on the server. Sensitive path found (HTTP 200)",
+          "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+          "references": [
+            "https://owasp.org/www-project-web-security-testing-guide/"
+          ]
+        },
+        {
+          "plugin_name": "dir",
+          "vulnerability_type": "Directory/File Found",
+          "severity": "info",
+          "confidence": 90.0,
+          "url": "http://testphp.vulnweb.com/crossdomain.xml",
+          "parameter": null,
+          "payload": null,
+          "evidence": "Path: /crossdomain.xml\nStatus Code: 200\nContent Length: 224\nContent Type: text/xml\nRedirect: N/A\nReason: Sensitive path found (HTTP 200)",
+          "request_data": null,
+          "response_data": null,
+          "description": "The path '/crossdomain.xml' was discovered on the server. Sensitive path found (HTTP 200)",
+          "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+          "references": [
+            "https://owasp.org/www-project-web-security-testing-guide/"
+          ]
+        },
+        {
+          "plugin_name": "dir",
+          "vulnerability_type": "Directory/File Found",
+          "severity": "info",
+          "confidence": 90.0,
+          "url": "http://testphp.vulnweb.com/clientaccesspolicy.xml",
+          "parameter": null,
+          "payload": null,
+          "evidence": "Path: /clientaccesspolicy.xml\nStatus Code: 200\nContent Length: 307\nContent Type: text/xml\nRedirect: N/A\nReason: Found (HTTP 200)",
+          "request_data": null,
+          "response_data": null,
+          "description": "The path '/clientaccesspolicy.xml' was discovered on the server. Found (HTTP 200)",
+          "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+          "references": [
+            "https://owasp.org/www-project-web-security-testing-guide/"
+          ]
+        },
+        {
+          "plugin_name": "dir",
+          "vulnerability_type": "Directory/File Found",
+          "severity": "info",
+          "confidence": 90.0,
+          "url": "http://testphp.vulnweb.com/vendor",
+          "parameter": null,
+          "payload": null,
+          "evidence": "Path: /vendor\nStatus Code: 200\nContent Length: 268\nContent Type: text/html\nRedirect: N/A\nReason: Found (HTTP 200)",
+          "request_data": null,
+          "response_data": null,
+          "description": "The path '/vendor' was discovered on the server. Found (HTTP 200)",
+          "remediation": "Review all discovered paths and ensure they should be publicly accessible. Remove or restrict access to sensitive files and directories. Implement proper access controls and consider using a Web Application Firewall (WAF).",
+          "references": [
+            "https://owasp.org/www-project-web-security-testing-guide/"
+          ]
+        }
+      ],
+      "findings_count": 10,
+      "errors": [],
+      "execution_time": 35.711098,
+      "requests_made": 10,
+      "completed": true,
+      "aborted": false,
+      "abort_reason": null
+    },
+    "cors": {
+      "plugin_name": "cors",
+      "findings": [],
+      "findings_count": 0,
+      "errors": [],
+      "execution_time": 3.375654,
+      "requests_made": 0,
+      "completed": true,
+      "aborted": false,
+      "abort_reason": null
+    },
+    "ssrf": {
+      "plugin_name": "ssrf",
+      "findings": [],
+      "findings_count": 0,
+      "errors": [],
+      "execution_time": 1.2e-05,
+      "requests_made": 0,
+      "completed": true,
+      "aborted": false,
+      "abort_reason": null
+    },
+    "openredirect": {
+      "plugin_name": "openredirect",
+      "findings": [],
+      "findings_count": 0,
+      "errors": [],
+      "execution_time": 101.893272,
+      "requests_made": 0,
+      "completed": true,
+      "aborted": false,
+      "abort_reason": null
+    }
+  }
+}
