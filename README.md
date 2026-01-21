@@ -3,7 +3,9 @@
 # 🔍 MWAVS
 
 ### Modular Web Application Vulnerability Scanner
-
+![Build Status](https://github.com/r0zx/mwavs/actions/workflows/python-ci.yml/badge.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macos%20%7C%20windows-lightgrey.svg?style=for-the-badge)]()
