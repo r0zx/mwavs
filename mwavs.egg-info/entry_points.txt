@@ -1,0 +1,2 @@
+[console_scripts]
+mwavs = scanner.cli.main:main

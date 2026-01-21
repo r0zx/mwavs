@@ -1,0 +1,33 @@
+# Core dependencies
+requests>=2.31.0
+urllib3>=2.0.0
+
+# CLI
+argparse>=1.4.0
+
+# YAML support for config files
+pyyaml>=6.0.1
+
+# HTML parsing
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Async support (optional)
+aiohttp>=3.9.0
+asyncio>=3.4.3
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+responses>=0.24.0
+
+# Development
+black>=23.0.0
+flake8>=6.1.0
+mypy>=1.7.0
+isort>=5.12.0
+
+# Documentation
+sphinx>=7.2.0
+sphinx-rtd-theme>=2.0.0
