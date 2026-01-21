@@ -58,7 +58,11 @@
 - Python 3.8 or higher
 - pip package manager
 
-### Quick Install
+ ## Quickstart
+
+### Automatic Scan
+```bash
+python3 mwavs.py --auto -u http://target.com
 
 
 ```bash
