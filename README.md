@@ -15,7 +15,7 @@
 
 **A production-grade, plugin-driven web application security scanner built for penetration testers, bug bounty hunters, and security professionals.**
 
-[Features](#-features) • [Installation](#-installation) • [Quick Start](#-quickstart) • [Documentation](#-documentation) • [Contributing](#-contributing)
+[Features](#-features) • [Installation](#-installation) • [Quick Start](#quickstart) • [Documentation](#-documentation) • [Contributing](#-contributing)
 
 </div>
 
