@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 from typing import Optional, List
 
-from scanner import __version__
+from mwavs import __version__
 
 
 def create_argument_parser() -> argparse.ArgumentParser:

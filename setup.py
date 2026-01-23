@@ -55,7 +55,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "mwavs=scanner.cli.main:main",
+            "mwavs=mwavs.cli.main:main",
         ],
     },
     classifiers=[
