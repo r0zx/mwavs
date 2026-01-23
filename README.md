@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔍 MWAVS
+# MWAVS
 
 ### Modular Web Application Vulnerability Scanner
 ![Build Status](https://github.com/r0zx/mwavs/actions/workflows/python-ci.yml/badge.svg)
@@ -21,25 +21,25 @@
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
-| 🔌 **Plugin Architecture** | Modular design with auto-discovery and hot-reload |
-| 🎭 **XSS Detection** | Reflected, DOM-based hints, context-aware payloads |
-| 💉 **SQL Injection** | Error-based, Boolean-blind, Time-based detection |
-| 📁 **Directory Enumeration** | Wordlist-based with extension fuzzing |
-| 🔗 **SSRF Detection** | Localhost, cloud metadata, internal network probing |
-| 🌐 **CORS Misconfiguration** | Wildcard, reflected origin, null origin detection |
-| ↗️ **Open Redirect** | URL parameter, JavaScript, meta refresh detection |
-| 🖥️ **Interactive Mode** | Manual testing with request/response inspection |
-| 📊 **Professional Reports** | JSON, HTML, TXT formats with evidence |
-| 🛡️ **WAF Detection** | Cloudflare, Akamai, AWS WAF identification |
-| 🔧 **Proxy Support** | Burp Suite and other proxy integration |
+| **Plugin Architecture** | Modular design with auto-discovery and hot-reload |
+| **XSS Detection** | Reflected, DOM-based hints, context-aware payloads |
+| **SQL Injection** | Error-based, Boolean-blind, Time-based detection |
+| **Directory Enumeration** | Wordlist-based with extension fuzzing |
+| **SSRF Detection** | Localhost, cloud metadata, internal network probing |
+| **CORS Misconfiguration** | Wildcard, reflected origin, null origin detection |
+| **Open Redirect** | URL parameter, JavaScript, meta refresh detection |
+| **Interactive Mode** | Manual testing with request/response inspection |
+| **Professional Reports** | JSON, HTML, TXT formats with evidence |
+| **WAF Detection** | Cloudflare, Akamai, AWS WAF identification |
+| **Proxy Support** | Burp Suite and other proxy integration |
 
 ---
 
-## 🎯 Vulnerability Coverage
+##  Vulnerability Coverage
 
 | Vulnerability | Methods | Severity | Status |
 |:-------------|:--------|:---------|:-------|
@@ -52,22 +52,25 @@
 
 ---
 
-## 📦 Installation
-
-### Requirements
-- Python 3.8 or higher
-- pip package manager
-
- ## Quickstart
-
-### Automatic Scan
-```bash
-python3 mwavs.py --auto -u http://target.com
-
+##  Installation
 
 ```bash
 git clone https://github.com/r0zx/mwavs
 cd mwavs
 pip install -r requirements.txt
 ```
-hi
+
+### Requirements
+- Python 3.8 or higher
+- pip package manager
+
+ ## Quickstart
+ ```bash 
+mwavs --help 
+```
+
+### Automatic Scan
+```bash
+python3 mwavs.py --auto -u http://target.com
+```
+
