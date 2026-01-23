@@ -70,3 +70,4 @@ git clone https://github.com/r0zx/mwavs
 cd mwavs
 pip install -r requirements.txt
 ```
+hi
