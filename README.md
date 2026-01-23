@@ -58,6 +58,7 @@
 git clone https://github.com/r0zx/mwavs
 cd mwavs
 pip install -r requirements.txt
+pip install -e .
 ```
 
 ### Requirements
@@ -71,6 +72,6 @@ mwavs --help
 
 ### Automatic Scan
 ```bash
-python3 mwavs.py --auto -u http://target.com
+mwavs --auto -u http://target.com
 ```
 
